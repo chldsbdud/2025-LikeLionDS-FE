@@ -1,3 +1,11 @@
+---
+name: "commitTag: 이슈 이름"
+about: 해당 이슈 생성 템플릿을 사용하여 이슈를 생성해주세요.
+title: ""
+labels: ""
+assignees: ""
+---
+
 ## 📄 About
 
 해당 이슈에서 작업할 내용을 작성해주세요.
