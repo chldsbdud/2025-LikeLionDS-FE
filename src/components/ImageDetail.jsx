@@ -1,5 +1,5 @@
 import React from "react";
-import * as I from "../styles/ImageDetailStyle";
+import * as I from "@styles/ImageDetailStyle";
 
 function ImageDetail() {
   return (

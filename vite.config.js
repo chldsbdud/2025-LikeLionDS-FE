@@ -5,4 +5,15 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   server: { port: 3000 },
+  resolve: {
+    alias: [
+      { find: "@", replacement: "/src" },
+      { find: "@assets", replacement: "/src/assets" },
+      { find: "@components", replacement: "/src/components" },
+      { find: "@lib", replacement: "/src/lib" },
+      { find: "@routes", replacement: "/src/routes" },
+      { find: "@styles", replacement: "/src/styles" },
+      { find: "@utils", replacement: "/src/utils" },
+    ],
+  },
 });

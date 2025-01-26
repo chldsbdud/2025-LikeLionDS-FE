@@ -1,5 +1,5 @@
 import React from "react";
-import * as A from "../styles/AdminMenuStyle";
+import * as A from "@styles/AdminMenuStyle";
 
 function AdminMenu() {
   return (

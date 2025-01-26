@@ -1,5 +1,5 @@
 import React from "react";
-import * as M from "../styles/MainStyle";
+import * as M from "@styles/MainStyle";
 
 function Main() {
   return (

@@ -1,18 +1,18 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-import "./App.css";
-import Splash from "./routes/Splash";
-import Main from "./routes/Main";
-import NoticeList from "./routes/NoticeList";
-import NoticeDetail from "./routes/NoticeDetail";
-import Question from "./routes/Question";
-import Applicants from "./routes/Applicants";
-import ApplicantsResult from "./routes/ApplicantsResult";
-import AdminLogin from "./routes/AdminLogin";
-import AdminMenu from "./routes/AdminMenu";
-import NoticeForm from "./routes/NoticeForm";
-import ProtectedRoute from "./ProtectedRoute";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import "@/App.css";
+import Splash from "@routes/Splash";
+import Main from "@routes/Main";
+import NoticeList from "@routes/NoticeList";
+import NoticeDetail from "@routes/NoticeDetail";
+import Question from "@routes/Question";
+import Applicants from "@routes/Applicants";
+import ApplicantsResult from "@routes/ApplicantsResult";
+import AdminLogin from "@routes/AdminLogin";
+import AdminMenu from "@routes/AdminMenu";
+import NoticeForm from "@routes/NoticeForm";
+import ProtectedRoute from "@/ProtectedRoute";
+import Header from "@components/Header";
+import Footer from "@components/Footer";
 
 function App() {
   const location = useLocation();

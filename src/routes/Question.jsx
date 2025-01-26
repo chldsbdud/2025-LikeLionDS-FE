@@ -1,6 +1,6 @@
 import React from "react";
-import * as Q from "../styles/QuestionStyle";
-// import { isAdminLoggedIn } from "../utils/auth";
+import * as Q from "@styles/QuestionStyle";
+// import { isAdminLoggedIn } from "@utils/auth";
 
 function Question() {
   // utils/Admin 파일 내의 isAdminLoggedIn 함수를 가져와서 로그인된 상태인지 확인

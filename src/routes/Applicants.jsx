@@ -1,5 +1,5 @@
 import React from "react";
-import * as A from "../styles/ApplicantsStyle";
+import * as A from "@styles/ApplicantsStyle";
 
 function Applicants() {
   return (

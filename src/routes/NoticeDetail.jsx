@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import * as N from "../styles/NoticeDetailStyle";
-import { isAdminLoggedIn } from "../utils/Admin";
+import * as N from "@styles/NoticeDetailStyle";
+import { isAdminLoggedIn } from "@utils/Admin";
 
 function NoticeDetail() {
   // utils/Admin 파일 내의 isAdminLoggedIn 함수를 가져와서 로그인된 상태인지 확인

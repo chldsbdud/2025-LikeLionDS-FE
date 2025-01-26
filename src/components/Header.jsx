@@ -1,5 +1,5 @@
 import React from "react";
-import * as H from "../styles/HeaderStyle";
+import * as H from "@styles/HeaderStyle";
 
 function Header() {
   return (

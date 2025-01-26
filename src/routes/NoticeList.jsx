@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import * as N from "../styles/NoticeListStyle";
-import { isAdminLoggedIn } from "../utils/Admin";
+import * as N from "@styles/NoticeListStyle";
+import { isAdminLoggedIn } from "@utils/Admin";
 
 function NoticeList() {
   // utils/Admin 파일 내의 isAdminLoggedIn 함수를 가져와서 로그인된 상태인지 확인
@@ -17,9 +17,7 @@ function NoticeList() {
     <>
       <N.NoticeList>공지사항 목록 페이지</N.NoticeList>
       {/* 테스트를 위해 임시로 만든 어드민 전용 버튼(수정바람)*/}
-      {isAdminLoggedIn() && (
-        <button onClick={handleNewNotice}>새 공지 작성</button>
-      )}
+      {isAdminLoggedIn() && <button onClick={handleNewNotice}>새 공지 작성</button>}
     </>
   );
 }
