@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import "@/App.css";
+import ScrollToTop from "@components/ScrollToTop";
 import Splash from "@routes/Splash";
 import Main from "@routes/Main";
 import NoticeList from "@routes/NoticeList";
@@ -21,6 +22,7 @@ function App() {
   return (
     <>
       {!isSplash && <Header />}
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Splash />} />
         <Route path="/main" element={<Main />} />
