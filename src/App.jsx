@@ -15,50 +15,50 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function App() {
-    const location = useLocation();
-    const isSplash = location.pathname === "/";
+  const location = useLocation();
+  const isSplash = location.pathname === "/";
 
-    return (
-        <>
-            {!isSplash && <Header />}
-            <Routes>
-                <Route path="/" element={<Splash />} />
-                <Route path="/main" element={<Main />} />
-                <Route path="/notice" element={<NoticeList />} />
-                <Route path="/notice/:id" element={<NoticeDetail />} />
-                <Route path="/qna" element={<Question />} />
-                <Route path="/input" element={<Applicants />} />
-                <Route path="/result" element={<ApplicantsResult />} />
-                <Route path="/admin" element={<AdminLogin />} />
-                {/* 어드민 로그인 상태에서만 접근 가능한 라우터들 */}
-                <Route
-                    path="/admin/menu"
-                    element={
-                        <ProtectedRoute>
-                            <AdminMenu />
-                        </ProtectedRoute>
-                    }
-                />
-                <Route
-                    path="/admin/notice/new"
-                    element={
-                        <ProtectedRoute>
-                            <NoticeForm type="new" />
-                        </ProtectedRoute>
-                    }
-                />
-                <Route
-                    path="/admin/notice/:id/edit"
-                    element={
-                        <ProtectedRoute>
-                            <NoticeForm type="edit" />
-                        </ProtectedRoute>
-                    }
-                />
-            </Routes>
-            {!isSplash && <Footer />}
-        </>
-    );
+  return (
+    <>
+      {!isSplash && <Header />}
+      <Routes>
+        <Route path="/" element={<Splash />} />
+        <Route path="/main" element={<Main />} />
+        <Route path="/notice" element={<NoticeList />} />
+        <Route path="/notice/:id" element={<NoticeDetail />} />
+        <Route path="/qna" element={<Question />} />
+        <Route path="/input" element={<Applicants />} />
+        <Route path="/result" element={<ApplicantsResult />} />
+        <Route path="/admin" element={<AdminLogin />} />
+        {/* 어드민 로그인 상태에서만 접근 가능한 라우터들 */}
+        <Route
+          path="/admin/menu"
+          element={
+            <ProtectedRoute>
+              <AdminMenu />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/notice/new"
+          element={
+            <ProtectedRoute>
+              <NoticeForm type="new" />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/notice/:id/edit"
+          element={
+            <ProtectedRoute>
+              <NoticeForm type="edit" />
+            </ProtectedRoute>
+          }
+        />
+      </Routes>
+      {!isSplash && <Footer />}
+    </>
+  );
 }
 
 export default App;
