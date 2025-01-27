@@ -2,4 +2,4 @@
 cd ../
 mkdir output
 cp -R ./2025-LikeLionDS-FE/* ./output
-cp -R ./output ./[team-repo-name]/
+cp -R ./output ./2025-LikeLionDS-FE/
