@@ -14,7 +14,9 @@ import NoticeForm from "@routes/NoticeForm";
 import ProtectedRoute from "@/ProtectedRoute";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
-
+import MainPage from "./components/Main/MainPage";
+import MainThird from "./components/Main/MainThird";
+import MainLast from "./components/Main/MainLast";
 function App() {
   const location = useLocation();
   const isSplash = location.pathname === "/";
@@ -26,6 +28,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Splash />} />
         <Route path="/main" element={<Main />} />
+        <Route path="/main/mainPage" element={<MainPage />}></Route>
+        <Route path="/main/mainThird" element={<MainThird />}></Route>
+        <Route path="/main/mainLast" element={<MainLast />}></Route>
         <Route path="/notice" element={<NoticeList />} />
         <Route path="/notice/:id" element={<NoticeDetail />} />
         <Route path="/qna" element={<Question />} />
