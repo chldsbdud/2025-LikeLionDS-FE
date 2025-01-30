@@ -4,6 +4,8 @@ import MainStartPage from "@components/Main/MainStartPage";
 import Main12thProjects from "@components/Main/Main12thProjects";
 import MainLastPage from "@components/Main/MainLastPage";
 
+import Header from "@components/Header/Header";
+
 function Main() {
   return (
     <>
